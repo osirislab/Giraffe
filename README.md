@@ -14,7 +14,7 @@ Setup
    * Apache - Apache/2.2.22 (Ubuntu)
    * MySQL - 5.5.29-0ubuntu0.12.10.1   
    * PHP - 5.4.6-1ubuntu1.2 (cli)
-
+<br /><br />
 2. Copy Giraffe files to the server root. 
 
 3. Setup the database by using the database.sql file. 
