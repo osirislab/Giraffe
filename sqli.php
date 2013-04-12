@@ -9,7 +9,7 @@
 	<body>
 		<?php
 			if(isset($_GET['id'])){
-				$db = mysql_connect('localhost', 'sqli', '911921841a856fc1a830dfec6e18bca2') or die('Could not connect: ' . mysql_error());
+				$db = mysql_connect('localhost', 'sqli', 'this_is_a_password') or die('Could not connect: ' . mysql_error());
 				$db = mysql_select_db("giraffe", $db);
 				$result = mysql_query('SELECT * FROM sqli WHERE id='.$_GET['id']);
 
@@ -21,6 +21,7 @@
 				    echo print_r($row);
 				}
 			}
+			echo "Running";
 		?>
 	</body>
 </html>

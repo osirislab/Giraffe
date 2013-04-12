@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL);
-$mysqli = new mysqli('localhost','sqli','911921841a856fc1a830dfec6e18bca2','giraffe');
+$mysqli = new mysqli('localhost','sqli','this_is_a_password','giraffe');
 
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
