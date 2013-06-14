@@ -10,12 +10,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	// if(!isset($_POST['username']) && count($_POST['username']) > 255){
 	// 	exit();
 	// }
-	if(isset($_POST['username']) && isset($_POST['password'])){
+	if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['profile'])){
 		$password = mysql_real_escape_string(md5($_POST['password']));
 		$username = mysql_real_escape_string($_POST['username']);
+		$profile = mysql_real_escape_string($_POST['profile']);
 
-		$query = $mysqli->prepare('INSERT INTO sqli (username, password) VALUES (?, ?)');
-		$query->bind_param('ss', $username, $password);
+		$query = $mysqli->prepare('INSERT INTO sqli (username, password, profile) VALUES (?, ?, ?)');
+		$query->bind_param('sss', $username, $password, $profile);
 		$query->execute();
 	}
 }
@@ -27,8 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	</head>
 	<body>
 		<form method="POST">
-			<input type="text" name="username">
-			<input type="text" name="password">
+			Username<input type="text" name="username"><br>
+			Password<input type="text" name="password"><br>
+			Profile<input type="text" name="profile"><br>
 			<input type="submit" value="submit">
 		</form>
 	</body>

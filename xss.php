@@ -8,6 +8,7 @@ session_start();
 		<title>ISIS Giraffe - XSS</title>
 	</head>
 	<body>
+		<h2>Cross Site Scripting</h2>
 		<div>
 			<p>
 			Cross Site Scripting (XSS) occurs when a site renders input
