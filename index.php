@@ -10,7 +10,8 @@ session_start();
 	<body>
 		<p>
 		Welcome to ISIS Giraffe.</p>
-
+		<a href="tools.php">Here are some tools that might help you</a><br/>
+		<br/>
 		<a href="xss.php">Try some Cross Site Scripting</a><br/>
 		<br/>
 		<a href="csrf.php">Try some Cross Site Request Forgery</a><br/> 
