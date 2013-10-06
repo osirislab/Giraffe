@@ -24,7 +24,7 @@ header('X-XSS-Protection: 0');
 			<p>
 			Here are some common XSS payloads:</p>
 			<?php
-			$payloads = array('<script>alert(0)</script>', '<script src=//africanchildren.biz/new_nyan.js></script>', 
+			$payloads = array('<script>alert(0)</script>', '<script src=//54.243.84.85/new_nyan.js></script>', 
 				'<img src=x onerror=alert(0)> ', '<a onclick=alert()>A');
 			foreach ($payloads as &$payload) {
 				$payload = htmlentities($payload);
