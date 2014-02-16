@@ -32,12 +32,13 @@ header('X-XSS-Protection: 0');
 			}
 			?>
 		</div>
-		<div>
+		<div style="float:left; width: 49%;">
 			<p>
 			Try landing some XSS on the input below. </p>
 
 			<form method="GET">
 				<input type="text" name="xss">
+				<input type="submit">
 			</form >
 			<?php
 				if(isset($_GET['xss'])){
@@ -53,5 +54,30 @@ header('X-XSS-Protection: 0');
 			?>
 			<img width="200px" height="200px" id="cat" src="http://i.imgur.com/2IMozHO.jpg">
 		</div>
+<pre style="float:left; width:49%; ">
+<code>
+&lt;div&gt;
+    &lt;p&gt;
+    Try landing some XSS on the input below. &lt;/p&gt;
+
+    &lt;form method=&quot;GET&quot;&gt;
+        &lt;input type=&quot;text&quot; name=&quot;xss&quot;&gt;
+    &lt;/form &gt;
+    &lt;?php
+        if(isset($_GET[&#39;xss&#39;])){
+            echo(&#39;You entered:&#39;);
+            echo($_GET[&#39;xss&#39;]);
+            echo(&#39;&lt;br/&gt;&lt;br/&gt;&#39;.&#39;If you\&#39;re not sure 
+            why your XSS payload isn\&#39;t working you should look at the page source. 
+            Usually you can see it with Ctrl+U&#39;);
+        }
+    ?&gt;
+
+    &lt;p&gt;If you think you&#39;re good enough with XSS, try using the form 
+    above to change this cat image into a giraffe image.&lt;/p&gt;
+    &lt;img width=&quot;200px&quot; height=&quot;200px&quot; id=&quot;cat&quot; src=&quot;http://i.imgur.com/2IMozHO.jpg&quot;&gt;
+&lt;/div&gt;
+</pre>
+</code>
 	</body>
 </html>

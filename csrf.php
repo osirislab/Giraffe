@@ -33,5 +33,23 @@ session_start();
 		echo($_SESSION['email'].'<br/>');
 	}
 	?>
+<pre>
+&lt;form method=&quot;POST&quot;&gt;
+	&lt;input type=&quot;text&quot; name=&quot;email_address&quot;&gt;
+&lt;/form&gt;
+
+&lt;?php
+if ($_SERVER[&#39;REQUEST_METHOD&#39;] == &#39;POST&#39;){
+	if(isset($_POST[&#39;email_address&#39;])){
+		$_SESSION[&#39;email&#39;] = htmlentities($_POST[&#39;email_address&#39;]);
+		echo(&quot;Your email address is now: &quot;.htmlentities($_POST[&#39;email_address&#39;]));
+		echo(&#39;&lt;br/&gt;&#39;);
+	}
+}
+if(isset($_SESSION[&#39;email&#39;])){
+	echo(&#39;Your current email is: &#39;);
+	echo($_SESSION[&#39;email&#39;].&#39;&lt;br/&gt;&#39;);
+}
+</pre>
 	</body>
 </html>
