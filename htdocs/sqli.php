@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$db = mysql_connect('localhost', 'sqli', 'this_is_a_password') or die('Could not connect: ' . mysql_error());
+	$db = mysql_connect('db', 'sqli', 'this_is_a_password') or die('Could not connect: ' . mysql_error());
 	$db = mysql_select_db("giraffe", $db);
 ?>
 
