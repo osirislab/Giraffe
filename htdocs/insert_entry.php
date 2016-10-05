@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <html>
 	<head>
-		<title>ISIS Giraffe - SQLi</title>
+		<title>OSIRIS Giraffe - SQLi</title>
 	</head>
 	<body>
 		<form method="POST">

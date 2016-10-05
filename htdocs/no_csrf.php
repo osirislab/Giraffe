@@ -4,7 +4,7 @@ session_start();
 
 <html>
 	<head>
-		<title>ISIS Giraffe - NoCSRF</title>
+		<title>OSIRIS Giraffe - NoCSRF</title>
 	</head>
 	<body>
 	<p>CSRF protection typically involves the server generating a random nonce which is required to be on all forms submitted by the user. This is not the only available protection but most CSRF protections are based around creating a required form value which an attacker cannot predict.</p>

@@ -9,7 +9,7 @@ session_start();
 	</head>
 	<body>
 		<p>
-		Welcome to ISIS Giraffe.</p>
+		Welcome to OSIRIS Giraffe.</p>
 		<a href="tools.php">Here are some tools that might help you</a><br/>
 		<br/>
 		<a href="xss.php">Try some Cross Site Scripting</a><br/>

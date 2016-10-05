@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ISIS Giraffe</title>
+		<title>OSIRIS Giraffe</title>
 	</head>
 	<body>
 		<h1>Tools</h1>

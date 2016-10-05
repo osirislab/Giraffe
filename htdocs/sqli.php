@@ -6,7 +6,7 @@
 
 <html>
 	<head>
-		<title>ISIS Giraffe - SQLi</title>
+		<title>OSIRIS Giraffe - SQLi</title>
 	</head>
 	<body>
 		<h2>SQL Injection</h2>

@@ -4,7 +4,7 @@ session_start();
 
 <html>
 	<head>
-		<title>ISIS Giraffe - CSRF</title>
+		<title>OSIRIS Giraffe - CSRF</title>
 	</head>
 	<body>
 	<h2>Cross Site Request Forgery</h2>

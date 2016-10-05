@@ -6,7 +6,7 @@ header('X-XSS-Protection: 0');
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ISIS Giraffe - XSS</title>
+		<title>OSIRIS Giraffe - XSS</title>
 	</head>
 	<body>
 		<h2>Cross Site Scripting</h2>
