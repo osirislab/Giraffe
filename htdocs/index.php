@@ -18,6 +18,8 @@ session_start();
 		<a href="no_csrf.php">See if you can make your CSRF exploit work here</a><br/> 
 		<br/>
 		<a href="sqli.php">Try some SQL Injection</a><br/>
-		<a href="insert_entry.php">Insert entries into the SQL database</a><br/>
+        <a href="insert_entry.php">Insert entries into the SQL database</a><br/>
+
+        <a href="commandi.php">Try some command injection</a><br/>
 	</body>
 </html>
