@@ -21,5 +21,6 @@ session_start();
         <a href="insert_entry.php">Insert entries into the SQL database</a><br/>
 
         <a href="commandi.php">Try some command injection</a><br/>
+        <a href="ssrf.php">Try some server side request forgery</a><br/>
 	</body>
 </html>
