@@ -22,5 +22,7 @@ session_start();
 
         <a href="commandi.php">Try some command injection</a><br/>
         <a href="ssrf.php">Try some server side request forgery</a><br/>
+        <a href="dir_trav.php">Try some directory traversal</a><br/>
+        
 	</body>
 </html>
