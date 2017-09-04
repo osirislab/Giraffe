@@ -9,7 +9,7 @@ web:
         - db
 
 db:
-    image: mysql
+    image: mariadb:10.2
     environment:
         MYSQL_ROOT_PASSWORD: you_should_change_this
     volumes:
